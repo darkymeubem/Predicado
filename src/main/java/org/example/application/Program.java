@@ -16,7 +16,7 @@ public class Program {
         list.add(new Product("HD Case", 80.90));
 
         double min = 100.0;
-
+    //test
         //Remover da lista todo produto que tiver preço menor que 100
 
 
