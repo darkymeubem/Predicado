@@ -16,7 +16,7 @@ public class Program {
 
         //Remover da lista todo produto que tiver preço menor que 100
 
-        list.removeIf(Product:: staticProductPredicate); //method reference
+        list.removeIf(Product:: nonStaticProductPredicate); //method reference
 
         for(Product p: list){
             System.out.println(p);

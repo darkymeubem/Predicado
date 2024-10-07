@@ -31,7 +31,7 @@ public class Product {
 
 
     public boolean nonStaticProductPredicate() {
-        return price >= 100.0;
+        return price <= 100.0;
     }
 
     public static boolean staticProductPredicate(Product p){
