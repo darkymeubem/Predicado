@@ -1,6 +1,7 @@
 package org.example.application;
 
 import org.example.entities.Product;
+import org.example.utill.ProductPedicate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +16,11 @@ public class Program {
 
         //Remover da lista todo produto que tiver preço menor que 100
 
-        list.removeIf(p -> p.getPrice() <= 100);
+        list.removeIf(new ProductPedicate());
+
+        for(Product p: list){
+            System.out.println(p);
+        }
 
     }
 }
