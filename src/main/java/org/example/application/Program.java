@@ -13,7 +13,9 @@ public class Program {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
+        //Remover da lista todo produto que tiver preço menor que 100
 
+        list.removeIf(p -> p.getPrice() <= 100);
 
     }
 }
